@@ -3,10 +3,7 @@ node {
     checkout scm
 
     stage 'Compile'
-    sh "./gradlew compileDebugSources"
-
-    stage 'Test'
-    sh "./gradlew test"
+    sh "./gradlew compileDebugJava"
 
     stage 'Build'
     sh "./gradlew build"
